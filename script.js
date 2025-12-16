@@ -24,17 +24,48 @@ add.addEventListener('click',function(){
     h2.innerHTML = arr
 })
 
+let time = 0;
+let big = document.querySelector('#big')
+
 let section = document.querySelector('section')
 section.addEventListener('dblclick',function(){
     
     if(flag === 0){
 
+        for(let i = 0;i<5;i++){
+            if(time === 0){
+                big.style.display = "flex";
+                big.style.fontSize = "5rem";
+                big.style.color = "#ffffff6d";
+                time++
+              
+            }
+            else{
+                setTimeout(function(){
+                    
+                    big.style.display = "none";
+                },500) 
+                time--
+            }
+        }
+
+    //    setTimeout(function(){
+    //      big.style.display = "flex";
+    //      big.style.fontSize = "5rem";
+    //      big.style.color = "#ffffff6d";
+    //      time++
+         
+    //     },100)
+
+     
         like.style.color = 'red'
         like.style.color = 'red'
         flag = 1
     }
     else{
 
+        
+         big.style.display = "none";
          like.style.color = "white";
          flag = 0;
     }
