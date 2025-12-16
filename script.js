@@ -49,13 +49,7 @@ section.addEventListener('dblclick',function(){
             }
         }
 
-    //    setTimeout(function(){
-    //      big.style.display = "flex";
-    //      big.style.fontSize = "5rem";
-    //      big.style.color = "#ffffff6d";
-    //      time++
-         
-    //     },100)
+ 
 
      
         like.style.color = 'red'
